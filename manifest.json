@@ -1,0 +1,18 @@
+{
+  "name": "GCP Console Redirect",
+  "version": "1.0",
+  "description": "Auto redirect console.cloud.google.com to console-secure.cloud.google.com",
+  "manifest_version": 3,
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "http://console.cloud.google.com/*",
+    "https://console.cloud.google.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}

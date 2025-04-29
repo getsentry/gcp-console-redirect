@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "console-secure.cloud.google.com"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "console.cloud.google.com",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+] 
